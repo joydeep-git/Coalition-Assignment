@@ -41,20 +41,24 @@
     font-weight: 600;
 }
 
-.centered-text > span {
+.centered-text>span {
     font-size: 7rem;
 }
 
 @media screen and (max-width: 767px) {
 
     .centered-text>span {
-            font-size: 5rem;
-        }
+        font-size: 5rem;
+    }
 }
 
 @media screen and (max-width: 400px) {
 
+    .home-container {
+        gap: 3rem;
+    }
+
     .centered-text>span {
-            font-size: 3.5rem;
-        }
+        font-size: 3.5rem;
+    }
 }

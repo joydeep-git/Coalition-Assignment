@@ -72,7 +72,7 @@ html {
 .num {
     margin-right: 0.5rem;
     color: #414e6a;
-    font-size: 10rem;
+    font-size: 9rem;
     font-weight: 600;
     font-family: 'Oswald', sans-serif;
     text-align: end;
@@ -87,7 +87,6 @@ html {
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-
 }
 
 .bottom-text {
@@ -125,11 +124,22 @@ html {
 @media screen and (max-width: 817px) {
 
 
-    .text {
-            width: 90%;
+    .num {
+        font-size: 6rem;
+    }
+
+        .texts>svg {
+            font-size: 1.25rem;
+        }
+    
+        .texts>p {
+            font-size: 1.25rem;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
         }
 
-    .background-image {
+    .text {
+        width: 90%;
     }
 
     .bottom-text {
