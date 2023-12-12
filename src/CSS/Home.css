@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap');
+
+.home-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.background-image {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    object-position: right center;
+}
+
+.centered-text {
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    gap: 0;
+    line-height: 1;
+}
+
+.centered-text .los {
+    color: #333333;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+.centered-text .moun {
+    color: #3465a4;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+.centered-text > span {
+    font-size: 7rem;
+}
+
+@media screen and (max-width: 767px) {
+
+    .centered-text>span {
+            font-size: 5rem;
+        }
+}
+
+@media screen and (max-width: 400px) {
+
+    .centered-text>span {
+            font-size: 3.5rem;
+        }
+}

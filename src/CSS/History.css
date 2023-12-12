@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap');
+
+body,
+html {
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+.History {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.background-image {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    object-position: right center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.top-text {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: start;
+}
+
+.num {
+    display: flex;
+    color: #414e6a;
+    font-size: 10rem;
+    font-weight: 600;
+    align-self: self-end;
+    font-family: 'Oswald', sans-serif;
+    text-align: end;
+    align-self: self-end;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1;
+    align-items: start;
+    justify-content: flex-end;
+}
+
+.top-text {
+    display: flex;
+    height: min-content;
+    align-items: center;
+}
+
+.texts {
+    display: flex;
+    text-align: left;
+}
+
+.num {
+    margin-right: 0.5rem;
+    color: #414e6a;
+    font-size: 10rem;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    text-align: end;
+}
+
+.texts>svg {
+    font-size: 2rem;
+    color: #414e6a;
+}
+
+.texts>p {
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.bottom-text {
+    color: #414e6a;
+    font-weight: 500;
+}
+
+.images {
+    background-color: rgba(66, 79, 108, 0.6);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.slider-images {
+    width: 11rem;
+    height: 8rem;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center center;
+    opacity: 1;
+    cursor: pointer;
+    border: 2px solid rgba(66, 79, 108, 0.6);
+}
+
+.slider-images:hover {
+    border-color: rgb(214, 48, 48);
+}
+
+@media screen and (max-width: 817px) {
+
+
+    .text {
+            width: 90%;
+        }
+
+    .background-image {
+    }
+
+    .bottom-text {
+        color: #414e6a;
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+
+    .images {
+        width: 100%;
+        padding: 0.25rem;
+        gap: 0.25rem;
+        flex-wrap: wrap-reverse;
+    }
+
+    .slider-images {
+        width: 8.5rem;
+        height: 5rem;
+    }
+}
