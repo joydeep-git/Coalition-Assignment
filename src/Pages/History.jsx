@@ -17,7 +17,7 @@ const History = () => {
 
     const imgArry = [mainBG, img1, img2, img3, img4];
 
-    const [image, setImage] = useState(img1);
+    const [image, setImage] = useState(mainBG);
 
     const silderImages = imgArry.filter((img) => img !== image);
 
@@ -46,8 +46,9 @@ const History = () => {
                 <div className='images'>
 
                     {
-                        silderImages.map((img) => {
+                        silderImages.map((img, index) => {
                             return <img
+                                key={index}
                                 onClick={() => setImage(img)}
                                 className='slider-images'
                                 src={img} alt='IMAGE' />
